@@ -18,7 +18,7 @@ const Header = ({backLink = ''}) => {
                 {<TbArrowNarrowLeft style={style}/>}
             </button>
             ) : 
-            <button onClick={() => {navigate('/profile')}}>
+            <button onClick={() => {navigate(isAuth ? '/profile' : '/auth')}}>
                 {<TbUser style={style}/>}
             </button>
             }
